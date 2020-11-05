@@ -16,27 +16,9 @@
     <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(246,249,252);margin: 0px 0px 0px 15px;">Agency</a></li>
     <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(255,255,255);">Idol</a></li>
 </ul>
-<div class="table-responsive" style="background-color: #fff7d0;">
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr></tr>
-        <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-        </tr>
-        <tr>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+
+@yield('content')
+
 <div class="footer-dark">
     <footer>
         <div class="container">
