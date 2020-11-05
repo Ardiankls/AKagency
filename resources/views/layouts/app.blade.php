@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title >AKagency</title>
+    <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/styles.min.css')}}">
+
 </head>
 
-<body>
+<body style="background-color: rgba(255,247,208,0.94);">
 <ul class="nav nav-tabs text-dark" style="background-color: #ddb1e2;">
-    <li class="nav-item"><a class="nav-link active" href="#" style="background-color: rgba(169,165,226,0);color: rgb(253,254,255);">aKagency</a></li>
-    <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(246,249,252);margin: 0px 0px 0px 15px;">Agency</a></li>
-    <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(255,255,255);">Idol</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Add Data</a></li>
+    <li class="nav-item"><a class="nav-link active" href="{{ route('idol.index') }}" style="background-color: rgba(169,165,226,0);color: rgb(253,254,255);">aKagency</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('agency.index') }}" style="background-color: rgba(101,154,216,0);color: rgb(246,249,252);margin: 0px 0px 0px 15px;">Agency</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('idol.index') }}" style="background-color: rgba(101,154,216,0);color: rgb(255,255,255);">Idol</a></li>
 </ul>
 
 @yield('content')
@@ -51,8 +51,9 @@
     </footer>
 </div>
 <footer></footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+<script src="{{asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
+
 </body>
 
 </html>

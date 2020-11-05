@@ -159,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604576080885</updated>
-      <workItem from="1604576082077" duration="10423000" />
+      <workItem from="1604576082077" duration="16828000" />
     </task>
     <servers />
   </component>
@@ -167,10 +167,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604583632561">
+    <state x="458" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604589393951">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="458" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1604583632561" />
+    <state x="458" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1604589393951" />
     <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604586052814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -183,5 +183,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1604577388098" />
+    <state x="0" y="0" width="583" height="768" key="find.popup" timestamp="1604593885249">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" width="583" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1604593885249" />
   </component>
 </project>

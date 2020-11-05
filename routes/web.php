@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('agency.index');
+    return redirect()->route('idol.index');
 });
 
 Route::resource('agency', AgencyController::class);

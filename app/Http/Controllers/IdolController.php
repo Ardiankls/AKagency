@@ -27,7 +27,8 @@ class IdolController extends Controller
      */
     public function create()
     {
-        //
+        $idol = idol::all();
+        return view('idol.addIdol', compact('idol'));
     }
 
     /**

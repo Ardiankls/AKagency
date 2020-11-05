@@ -27,6 +27,8 @@ class AgencyController extends Controller
     public function create()
     {
         //
+         $agency = agency::all();
+         return view('agency.addAgency', compact('agency'));
     }
 
     /**
