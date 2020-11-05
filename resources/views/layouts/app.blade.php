@@ -15,6 +15,7 @@
     <li class="nav-item"><a class="nav-link active" href="#" style="background-color: rgba(169,165,226,0);color: rgb(253,254,255);">aKagency</a></li>
     <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(246,249,252);margin: 0px 0px 0px 15px;">Agency</a></li>
     <li class="nav-item"><a class="nav-link" href="#" style="background-color: rgba(101,154,216,0);color: rgb(255,255,255);">Idol</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Add Data</a></li>
 </ul>
 
 @yield('content')

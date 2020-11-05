@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <div class="table-responsive" style="background-color: #fff7d0;">
     <table class="table">
         <thead>
@@ -19,3 +21,4 @@
         </tbody>
     </table>
 </div>
+@endsection

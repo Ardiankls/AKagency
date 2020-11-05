@@ -15,6 +15,9 @@ class IdolController extends Controller
     public function index()
     {
         //
+        $idol = idol::all();
+        return view('idol.index', compact('idol'));
+
     }
 
     /**
