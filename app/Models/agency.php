@@ -15,4 +15,9 @@ class agency extends Model
         'email_agency',
         'founded_agency'
     ];
+        public function idol(){
+        return $this->hasMany(idol::class, 'agency_idol', 'id');
+
+
+    }
 }

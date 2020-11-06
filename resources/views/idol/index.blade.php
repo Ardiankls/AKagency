@@ -9,25 +9,34 @@
                 <tr>
                     <th>Name</th>
                     <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Speciality</th>
+                    <th>Agency</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($idol as $idol)
                 <tr>
-                    <td>Text</td>
-                    <td>Text</td>
-                    <td><button class="btn btn-secondary" type="button" style="margin: 0px 12px;">Edit</button><button class="btn btn-danger" type="button">Delete</button></td>
+
+                    <td>{{ $idol->name_idol }}</td>
+                    <td>{{ $idol->age_idol }}</td>
+                    <td>{{ $idol->gender_idol }}</td>
+                    <td>{{ $idol->phone_idol }}</td>
+                    <td>{{ $idol->speciality_idol }}</td>
+                    <td>{{ $idol->agency->name_agency }}</td>
+                    <td><form action="{{ route('idol.edit', $idol) }}" >
+                        <button class="btn btn-secondary" type="submit"  style="margin: 0px 12px;">Edit</button>
+                        </form>
+                        <form action="{{ route('idol.destroy', $idol) }}" method="post">
+                            @csrf
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </form>
+                    </td>
                 </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td><button class="btn btn-secondary" type="button" style="margin: 0px 12px;">Edit</button><button class="btn btn-danger" type="button">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                    <td><button class="btn btn-secondary" type="button" style="margin: 0px 12px;">Edit</button><button class="btn btn-danger" type="button">Delete</button></td>
-                </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

@@ -17,9 +17,10 @@ class CreateIdolsTable extends Migration
             $table->id();
             $table->string('name_idol');
             $table->string('age_idol');
+            $table->string('gender_idol');
             $table->string('phone_idol');
             $table->string('speciality_idol');
-            $table->string('agency');
+
             $table->timestamps();
         });
     }

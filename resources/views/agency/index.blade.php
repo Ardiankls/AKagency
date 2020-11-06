@@ -8,24 +8,37 @@
                 <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Age</th>
+                    <th>Ceo</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Founded</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($agency as $agency)
                 <tr>
-                    <td>Text</td>
-                    <td>Text</td>
-                    <td><button class="btn btn-secondary" type="button" style="margin: 0px 12px;">Edit</button><button class="btn btn-danger" type="button">Delete</button></td>
+{{--                    <td>test</td>--}}
+{{--                    <td>test</td>--}}
+{{--                    <td>test</td>--}}
+{{--                    <td>test</td>--}}
+{{--                    <td>test</td>--}}
+
+                    <td>{{ $agency->name_agency }}</td>
+                    <td>{{ $agency->ceo_agency }}</td>
+                    <td>{{ $agency->phone_agency }}</td>
+                    <td>{{ $agency->email_agency }}</td>
+                    <td>{{ $agency->founded_agency }}</td>
+                    <td><form action="{{ route('agency.edit', $agency) }}" >
+                            <button class="btn btn-secondary" type="submit"  style="margin: 0px 12px;">Edit</button>
+                        </form>
+                        <form action="{{ route('agency.destroy', $agency) }}" method="post">
+                            @csrf
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </form>
                 </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                </tr>
-                <tr>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

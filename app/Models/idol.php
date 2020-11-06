@@ -11,8 +11,12 @@ class idol extends Model
     protected $fillable = [
         'name_idol',
         'age_idol',
+        'gender_idol',
         'phone_idol',
         'speciality_idol',
-        'agency'
+        'agency_idol'
     ];
+    public function agency(){
+           return $this->belongsTo(agency::class,'agency_idol', 'id');
+           }
 }

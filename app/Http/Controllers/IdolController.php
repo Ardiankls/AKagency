@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\idol;
 use Illuminate\Http\Request;
+use App\Models\agency;
 
 class IdolController extends Controller
 {
@@ -27,8 +28,9 @@ class IdolController extends Controller
      */
     public function create()
     {
-        $idol = idol::all();
-        return view('idol.addIdol', compact('idol'));
+        $agencies = agency::all();
+                return view('idol.addIdol', compact('agencies'));
+
     }
 
     /**
@@ -39,7 +41,10 @@ class IdolController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+//
+             idol::create($request->all());
+             return redirect()->route('idol.index');
     }
 
     /**
@@ -61,7 +66,9 @@ class IdolController extends Controller
      */
     public function edit(idol $idol)
     {
-        //
+          $agencies = agency::all();
+          return view('idol.editIdol', compact('agencies', 'idol'));
+
     }
 
     /**
@@ -74,6 +81,8 @@ class IdolController extends Controller
     public function update(Request $request, idol $idol)
     {
         //
+         $idol->update($request->all());
+         return redirect()->route('idol.index');
     }
 
     /**
@@ -85,5 +94,7 @@ class IdolController extends Controller
     public function destroy(idol $idol)
     {
         //
+        $idol->delete();
+        return redirect()->route('idol.index');
     }
 }

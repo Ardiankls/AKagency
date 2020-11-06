@@ -40,6 +40,8 @@ class AgencyController extends Controller
     public function store(Request $request)
     {
         //
+        agency::create($request->all());
+        return redirect()->route('agency.index');
     }
 
     /**
@@ -62,6 +64,7 @@ class AgencyController extends Controller
     public function edit(agency $agency)
     {
         //
+       return view('agency.editAgency', compact('agency'));
     }
 
     /**
@@ -74,6 +77,8 @@ class AgencyController extends Controller
     public function update(Request $request, agency $agency)
     {
         //
+        $agency->update($request->all());
+         return redirect()->route('agency.index');
     }
 
     /**
@@ -85,5 +90,7 @@ class AgencyController extends Controller
     public function destroy(agency $agency)
     {
         //
+         $agency->delete();
+         return redirect()->route('agency.index');
     }
 }
