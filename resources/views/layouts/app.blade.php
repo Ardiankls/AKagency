@@ -13,7 +13,7 @@
 
 <body style="background-color: rgba(255,247,208,0.94);">
 <ul class="nav nav-tabs text-dark" style="background-color: #ddb1e2;">
-    <li class="nav-item"><a class="nav-link active" href="{{ route('idol.index') }}" style="background-color: rgba(169,165,226,0);color: rgb(253,254,255);">aKagency</a></li>
+    <li class="nav-item"><a class="nav-link active" href="/" style="background-color: rgba(169,165,226,0);color: rgb(253,254,255);">aKagency</a></li>
     <li class="nav-item"><a class="nav-link" href="{{ route('agency.index') }}" style="background-color: rgba(101,154,216,0);color: rgb(246,249,252);margin: 0px 0px 0px 15px;">Agency</a></li>
     <li class="nav-item"><a class="nav-link" href="{{ route('idol.index') }}" style="background-color: rgba(101,154,216,0);color: rgb(255,255,255);">Idol</a></li>
 </ul>

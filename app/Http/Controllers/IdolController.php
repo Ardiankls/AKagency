@@ -56,6 +56,7 @@ class IdolController extends Controller
     public function show(idol $idol)
     {
         //
+
     }
 
     /**

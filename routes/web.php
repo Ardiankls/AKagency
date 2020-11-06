@@ -3,6 +3,7 @@
 use App\Http\Controllers\AgencyController;
 use App\Http\Controllers\IdolController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('idol.index');
-});
 
+Route::get('/', [PageController::class, 'index']);
 Route::resource('agency', AgencyController::class);
 Route::resource('idol', IdolController::class);
